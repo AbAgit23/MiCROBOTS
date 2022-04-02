@@ -1,0 +1,51 @@
+DOIT Esp32 Devkit v1
+
+
+To connect to arduino UNO
+VCC   (5v)
+GND   (ground)
+SCL   (A5 in arduino)  ---> pc5 28--a5 19-- PCINT 13-- ADC5--(SCL)
+SDA   (A4 in arduino)  ---> pc4 27--a4 18-- PCINT 12-- ADC4--(SDA)
+XDA  (---)
+XCL  (---)
+ADO  (---)
+INT   (2 in arduino)  ---> pd 4 2--INT 0-- PCINT 18-- PWM--(0C2B)
+
+
+
+To connect to DOIT Esp32 Devkit v1
+VCC   (5v)           ---> --------------------------------------------1
+GND   (ground)       ---> --------------------------------------------2
+SCL   (17 in ESP32)  ---> GPIO 22--VSPI_WP--(SCL)--UO_RTS--EMAC_TXD1--17
+SDA   (14 in ESP32)  ---> GPIO 21--VSPI_HD--(SDA)----------EMAC_TX_EN--14
+XDA  (---)
+XCL  (---)
+ADO  (---)
+INT   (2 in ESP32)   ---> GPIO 16--RX2-----------(HS1_Datas)
+
+
+VCC   (5v)           ---> -------------------------------------------- 1
+GND   (ground)       ---> -------------------------------------------- 2
+SCL   (17 in ESP32)  ---> GPIO 22--VSPI_WP--(SCL)--UO_RTS--EMAC_TXD1--17
+SDA   (14 in ESP32)  ---> GPIO 21--VSPI_HD--(SDA)----------EMAC_TX_EN--14
+XDA  (---)
+XCL  (---)
+ADO  (---)
+INT  (---)   
+
+
+For PWM  *channels from pin 1 to 15 
+
+For Digit*al LED and digital write
+
+All GPIOs can be used as outputs except GPIOs 6 to 11 (connected to the integrated SPI flash)
+and GPIOs 34, 35, 36 and 39 (input only GPIOs);
+
+
+
+
+
+
+
+
+
